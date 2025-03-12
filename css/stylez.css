@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.fons {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(ivory, pink);
+    z-index: -200;
+} */
+
+.contenidor{
+    width: 100%;
+    height: 1529px;
+    background-image: url(../img/fons.jpg);
+}
+
+.cap {
+    height: 589px;
+    text-align: center;
+}
+
+h1{
+    margin: 0px;
+    padding-top: 50px;
+    font-size: 4rem;
+    line-height: 2rem;
+    display: inline-block;
+    margin-bottom: 75px;
+}
+
+.gris {
+    color: gray;
+}
+
+.cotxe {
+    margin-top: 100px;
+    width: 920px;
+    height: 430px;
+    margin: 0 auto;
+    background-image: url(../img/ani/back.png);
+    background-position: -10px -200px;
+    background-repeat: no-repeat;
+    animation: canvi 25s infinite linear;
+}
+
+@keyframes canvi{
+    0% {background-image: url(../img/ani/back.png);}
+
+    11% {background-image: url(../img/ani/bean.png);}
+    22% {background-image: url(../img/ani/bond.png);}
+    33% {background-image: url(../img/ani/break.png);}
+    44% {background-image: url(../img/ani/ghost.png);}
+    55% {background-image: url(../img/ani/pulp.png);}
+    66% {background-image: url(../img/ani/pulp.png);}
+    77% {background-image: url(../img/ani/rider.png);}
+    88% {background-image: url(../img/ani/taxi.png);}
+    100% {background-image:url(../img/ani/team.png);}
+}
+
+/*--------------------------------*/
+
+.cos {
+    width: 870px;
+    height: 720px;
+    margin: 0 auto;
+}
+
+.Pelicula {
+    opacity: 50%;
+    padding: 20px 10px;
+    width: 270px;
+    height: 200px;
+    float: left;
+}
+
+.Pelicula:hover{
+    opacity: 100%;
+    animation: gir 0.3s linear;
+    filter: hue-rotate(90deg);
+}
+
+@keyframes gir{
+    0% {transform: rotate(0deg);
+    }
+
+    100% {transform: rotate(360deg);
+    }
+}
+
+.Pelicula img {
+    width: 270px;
+}
+
+.Nom {
+    width: 270px;
+    height: 40px;
+    background-color: white;
+}
+
+.Titol {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0;
+    color: gray;
+    font-size: 1rem;
+}
+
+
+/*--------------------------------*/
+
+
+.peu {
+    height: 220px;
+    text-align: center;
+    clear: both;
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+    .contenidor{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/fons.jpg);
+    }
+
+    h1{
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+
+    .cotxe {
+        width: 700px;
+        height: 300px;
+        background-image: url(../img/ani/back.png);
+        background-size: 80%;
+        background-position: 50px -40px;
+        background-repeat: no-repeat;
+    }
+
+    /*--------------------------------*/
+
+    .cos {
+        width: 500px;
+        height: 2200px;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .Pelicula {
+        margin-left: 100px;
+        opacity: 50%;
+        padding: 20px 10px;
+        width: 270px;
+        height: 200px;
+        clear: both;
+    }
+}
